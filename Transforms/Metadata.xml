@@ -1,0 +1,23 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <remove-node path="/api/package[@name='com.android.volley']/interface[@name='Request.Method']" />
+  <attr path="/api/package[@name='com.android.volley']/class[@name='Request']/method[@name='compareTo']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
+
+  <remove-node path="/api/package[@name='com.android.volley.toolbox']/class[@name='JsonRequest']/method[@name='parseNetworkResponse']" />
+  <attr path="/api/package[@name='com.android.volley.toolbox']/class[@name='ImageRequest']/method[@name='deliverResponse']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.android.volley.toolbox']/class[@name='StringRequest']/method[@name='deliverResponse']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.android.volley.toolbox']/interface[@name='ImageLoader.ImageCache']/method[@name='getBitmap']/parameter[@name='p0']" name="name">url</attr>
+  <attr path="/api/package[@name='com.android.volley.toolbox']/interface[@name='ImageLoader.ImageCache']/method[@name='putBitmap']/parameter[@name='p0']" name="name">url</attr>
+  <attr path="/api/package[@name='com.android.volley.toolbox']/interface[@name='ImageLoader.ImageCache']/method[@name='putBitmap']/parameter[@name='p1']" name="name">bitmap</attr>
+
+  <attr path="/api/package[@name='com.android.volley.toolbox']/interface[@name='ImageLoader.ImageListener']/method[@name='onResponse']/parameter[@name='p0']" name="name">response</attr>
+  <attr path="/api/package[@name='com.android.volley.toolbox']/interface[@name='ImageLoader.ImageListener']/method[@name='onResponse']/parameter[@name='p1']" name="name">isImmediate</attr>
+</metadata>
